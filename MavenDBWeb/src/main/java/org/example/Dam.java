@@ -10,13 +10,14 @@ import java.util.Scanner;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class App {
+public class Dam {
     final static String fetchURL = "https://ckan.open-governmentdata.org/dataset/8c753941-a47e-43de-b438-30f159c6efda/resource/96b18b76-f2aa-47a8-9530-255d439a0090/download/realtimetotal.html";
     final static String ZONE = "Japan";
     //final static String debugFile = "output.txt";
 
-    public static void main(String[] args) {
-        System.out.println(getDamdata());
+    public static String main() {
+        //System.out.println(getDamdata());
+        return getDamdata();
     }
 
     public static String getDamdata() {      // 情報の取得データの成形Json化一連の流れ全部まとめる

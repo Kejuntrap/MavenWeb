@@ -21,4 +21,16 @@ public class Damdata {      // Jsonのために必要なクラス
                 ", dataCreated=" + dataCreated +
                 "]";
     }
+
+    public String toStringwithid(int id){
+        return "Damdata data_id."+id+" [year=" + year +
+                ", month=" + month +
+                ", day=" + day +
+                ", hour=" + hour +
+                ", waterVolume=" + waterVolume +
+                ", percentage=" + percentage +
+                ", diff=" + diff +
+                ", dataCreated=" + dataCreated +
+                "]";
+    }
 }
